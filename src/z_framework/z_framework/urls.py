@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from excel_folder.views import index
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Base html
+    path('', index),
 ]
